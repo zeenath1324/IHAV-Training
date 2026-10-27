@@ -1,0 +1,190 @@
+zeena@BooZee UCRT64 /d/AI Training/Unix (master)
+$ pwd
+/d/AI Training/Unix
+
+zeena@BooZee UCRT64 /d/AI Training/Unix (master)
+$ ls
+txtw.txt
+
+zeena@BooZee UCRT64 /d/AI Training/Unix (master)
+$ ls -l
+total 1
+-rw-r--r-- 1 zeena 197612 22 Oct 27 12:02 txtw.txt
+
+zeena@BooZee UCRT64 /d/AI Training/Unix (master)
+$ ls -ld
+drwxr-xr-x 1 zeena 197612 0 Oct 27 12:01 ./
+
+zeena@BooZee UCRT64 /d/AI Training/Unix (master)
+$ whoami
+zeena
+
+zeena@BooZee UCRT64 /d/AI Training/Unix (master)
+$ who
+
+zeena@BooZee UCRT64 /d/AI Training/Unix (master)
+$ ls
+txtw.txt
+
+zeena@BooZee UCRT64 /d/AI Training/Unix (master)
+$ cat txtw.txt
+hello hi how are you
+
+zeena@BooZee UCRT64 /d/AI Training/Unix (master)
+$ cat > file.txt
+hi
+hello
+how is it
+
+zeena@BooZee UCRT64 /d/AI Training/Unix (master)
+$ cat file.txt
+hi
+hello
+
+zeena@BooZee UCRT64 /d/AI Training/Unix (master)
+$  mkdir sample
+
+zeena@BooZee UCRT64 /d/AI Training/Unix (master)
+$ ls
+file.txt  sample/  txtw.txt
+
+zeena@BooZee UCRT64 /d/AI Training/Unix (master)
+$ ls -l
+total 2
+-rw-r--r-- 1 zeena 197612  9 Oct 27 12:05 file.txt
+drwxr-xr-x 1 zeena 197612  0 Oct 27 12:13 sample/
+-rw-r--r-- 1 zeena 197612 22 Oct 27 12:02 txtw.txt
+
+zeena@BooZee UCRT64 /d/AI Training/Unix (master)
+$ ls -ld
+drwxr-xr-x 1 zeena 197612 0 Oct 27 12:13 ./
+
+zeena@BooZee UCRT64 /d/AI Training/Unix (master)
+$ cd sample
+
+zeena@BooZee UCRT64 /d/AI Training/Unix/sample (master)
+$ cat > file2.txt
+hkjkaashjj
+ajkjjskal
+
+
+zeena@BooZee UCRT64 /d/AI Training/Unix/sample (master)
+$ cat file2.txt
+hkjkaashjj
+ajkjjskal
+
+zeena@BooZee UCRT64 /d/AI Training/Unix/sample (master)
+$ ls
+file2.txt
+
+zeena@BooZee UCRT64 /d/AI Training/Unix/sample (master)
+$ ls -l
+total 1
+-rw-r--r-- 1 zeena 197612 21 Oct 27 12:17 file2.txt
+
+zeena@BooZee UCRT64 /d/AI Training/Unix/sample (master)
+$ mkdir dummyy
+
+zeena@BooZee UCRT64 /d/AI Training/Unix/sample (master)
+$ ls
+dummyy/  file2.txt
+
+zeena@BooZee UCRT64 /d/AI Training/Unix/sample (master)
+$ rmdir dummyy
+
+zeena@BooZee UCRT64 /d/AI Training/Unix/sample (master)
+$ ls
+file2.txt
+
+zeena@BooZee UCRT64 /d/AI Training/Unix/sample (master)
+$ cd ..
+
+zeena@BooZee UCRT64 /d/AI Training/Unix (master)
+$ ls
+file.txt  sample/  txtw.txt
+
+zeena@BooZee UCRT64 /d/AI Training/Unix (master)
+$ cp file.txt newfile.txt
+
+zeena@BooZee UCRT64 /d/AI Training/Unix (master)
+$ ls
+file.txt  newfile.txt  sample/  txtw.txt
+
+zeena@BooZee UCRT64 /d/AI Training/Unix (master)
+$ cat file.txt
+hi
+hello
+
+zeena@BooZee UCRT64 /d/AI Training/Unix (master)
+$ cat newfile.txt
+hi
+hello
+
+zeena@BooZee UCRT64 /d/AI Training/Unix (master)
+$ mv newfile.txt movedfile.txt
+
+zeena@BooZee UCRT64 /d/AI Training/Unix (master)
+$ ls
+file.txt  movedfile.txt  sample/  txtw.txt
+
+zeena@BooZee UCRT64 /d/AI Training/Unix (master)
+$ ls -l
+total 3
+-rw-r--r-- 1 zeena 197612  9 Oct 27 12:05 file.txt
+-rw-r--r-- 1 zeena 197612  9 Oct 27 12:24 movedfile.txt
+drwxr-xr-x 1 zeena 197612  0 Oct 27 12:20 sample/
+-rw-r--r-- 1 zeena 197612 22 Oct 27 12:02 txtw.txt
+
+zeena@BooZee UCRT64 /d/AI Training/Unix (master)
+$ cp file.txt sample/zee.txt
+
+zeena@BooZee UCRT64 /d/AI Training/Unix (master)
+$ cd sample
+
+zeena@BooZee UCRT64 /d/AI Training/Unix/sample (master)
+$ ls
+file2.txt  zee.txt
+
+zeena@BooZee UCRT64 /d/AI Training/Unix/sample (master)
+$ cd ..
+
+zeena@BooZee UCRT64 /d/AI Training/Unix (master)
+$ cd sample
+
+zeena@BooZee UCRT64 /d/AI Training/Unix/sample (master)
+$ ls
+file2.txt  zee.txt
+
+zeena@BooZee UCRT64 /d/AI Training/Unix/sample (master)
+$ mv movedfile.txt sample/newmoved.txt
+mv: cannot stat 'movedfile.txt': No such file or directory
+
+zeena@BooZee UCRT64 /d/AI Training/Unix/sample (master)
+$ ls
+file2.txt  zee.txt
+
+zeena@BooZee UCRT64 /d/AI Training/Unix/sample (master)
+$ date
+Tue Oct 27 13:55:31 IST 2026
+
+zeena@BooZee UCRT64 /d/AI Training/Unix/sample (master)
+$ time
+
+real    0m0.006s
+user    0m0.000s
+sys     0m0.000s
+
+zeena@BooZee UCRT64 /d/AI Training/Unix/sample (master)
+$ uptime
+bash: uptime: command not found
+
+zeena@BooZee UCRT64 /d/AI Training/Unix/sample (master)
+$ free
+bash: free: command not found
+
+zeena@BooZee UCRT64 /d/AI Training/Unix/sample (master)
+$ cal
+bash: cal: command not found
+
+zeena@BooZee UCRT64 /d/AI Training/Unix/sample (master)
+$
